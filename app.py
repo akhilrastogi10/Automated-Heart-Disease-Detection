@@ -5,6 +5,7 @@ import numpy as np
 import os
 
 # Load the trained model using a relative path (ensure the model is in the same folder as the app)
+model = load_model('ecg_model.h5')
 model = load_model('ecg_model_tf2.h5')  # This will look for the model in the current working directory
 
 # Define the image size used during training (ensure it matches your training process)
